@@ -1,19 +1,12 @@
 import React from 'react';
 
-import { Artists } from '../data/artists';
-import { Tracks } from '../data/tracks';
-
 import * as d3 from 'd3';
 
 import '../css/pages.css';
 import { getSpotifyColor } from '../utils/color';
 
-interface AnalyticsProps {
-  artists: Array<Artists>;
-  tracks: Array<Tracks>;
-}
 
-export class AnalyticsPage extends React.Component<AnalyticsProps, {}> {
+export class AnalyticsPage extends React.Component<{}, {}> {
 
   ref!: SVGSVGElement;  
   
@@ -53,28 +46,9 @@ export class AnalyticsPage extends React.Component<AnalyticsProps, {}> {
       .text(function(d) { return "test"; });
     
   }
-
-  private getGenreData() {
-    let artists: Artists[] = this.props.artists;
-    let genres: any = {};
-
-    artists.forEach( artist => {
-      artist.genres.forEach( genre => {
-        if ( genres[genre] === undefined ) {
-          genres[genre] = 1;
-        } else {
-          genres[genre] += 1;
-        }
-      })
-    });
-
-    return genres;
-  }
   
   componentDidMount() {
-    let genres = this.getGenreData();
-    console.log(genres);
-    this.buildGraph(JSON.parse(genres));
+
   }
 
   render() {

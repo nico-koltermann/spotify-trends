@@ -1,19 +1,14 @@
-# Spotify Trends Viewer - React
+# Spotify Custom Trend Viewer - React
 
-This is a test project for playing around with React and the Spotify-API.
+The Spotify Custom Trend Viewer is a test project for playing around with React, which allows to analyze the previous data of the given Spotify account data.
 
-It contains a react-webapp, which allows to analyze the previous data of the given Spotify account.
+Its the extended version of this  [Simple-Trends-Repository](https://github.com/nico-koltermann/spotify-simple-trends), which only uses the spotify-api. 
 
-This app works with the official [Spotify API](https://developer.spotify.com/documentation/web-api/reference/#/).
-
-To run this project, you have to put the credentials into the ```.env``` file. The token can be accessed at the [Spotify delevoper page](https://developer.spotify.com/dashboard/applications) ad the dashboard, if you have an account.
-
-
-### First Version __---WIP---__
-
-![](./docs/images/dashboard.png)
+This project uses a custom backend, which can be found [here](https://github.com/nico-koltermann/spotify-listening-database).
 
 ## Available Scripts
+
+To run this project, you have to put the credentials into the ```.env``` file. The token can be accessed at the [Spotify delevoper page](https://developer.spotify.com/dashboard/applications) ad the dashboard, if you have an account.
 
 In the project directory, you can run:
 

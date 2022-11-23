@@ -4,7 +4,6 @@ import reportWebVitals from './reportWebVitals';
 
 // Modules
 import App from './app';
-import { PageContent } from './pages/page-content';
 
 // Styles
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -14,6 +13,7 @@ import './css/index.css';
 import { BrowserRouter } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 import { DatabasePage } from './pages/database-page';
+import { AnalyticsPage } from './pages/analytics-page';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -24,8 +24,11 @@ root.render(
     <BrowserRouter>
     <App />
     <Routes>
-        <Route path='' element={
-          <PageContent />
+        <Route path='/' element={
+          <AnalyticsPage />
+        }></Route>
+        <Route path='/analytics' element={
+          <AnalyticsPage />
         }></Route>
           <Route path='/database' element={
             <DatabasePage />
