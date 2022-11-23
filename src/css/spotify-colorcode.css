@@ -1,0 +1,42 @@
+:root {
+  --spotify-green: #1DB954;
+  --spotify-green-hover: #14a547;
+  --spotify-white: #ffffff;
+  --spotify-white-hover: #f3f1f1;
+  --spotify-black: #191414;
+}
+
+.spotify-color {
+  color: var(--spotify-green);
+}
+.spotify-color:hover {
+  color: var(--spotify-green-hover);
+}
+
+.spotify-button {
+  background-color: var(--spotify-green);
+  border-color: var(--spotify-green);
+}
+
+.spotify-button:hover {
+  background-color: var(--spotify-green-hover);
+  border-color: var(--spotify-green-hover);
+}
+
+
+.spotify-button-outlier {
+  background-color: var(--spotify-white);
+  color: var(--spotify-green);
+  border-color: var(--spotify-green);
+}
+
+.spotify-button-outlier:hover {
+  background-color: var(--spotify-white-hover);
+  color: var(--spotify-green-hover);
+  border-color: var(--spotify-green-hover);
+}
+
+.spotify-button-outlier:active {
+  background-color: var(--spotify-green);
+  color: var(--spotify-green-hover);
+}
