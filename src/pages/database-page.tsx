@@ -29,6 +29,8 @@ export class DatabasePage extends React.Component<{}, DataState> {
       value.forEach((x: any[]) => {
         if ( values[x[1].toString()] === undefined) {
           values[x[1].toString()] = 1;
+          console.log(x[1].toString());
+          console.log(x[1]);
         } else {
           values[x[1].toString()] += 1;
         }
